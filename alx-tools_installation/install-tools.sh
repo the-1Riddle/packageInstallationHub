@@ -112,7 +112,7 @@ sudo apt-get install -y make
 
 # on successful instalation printf
 
-echo "Installation was successfull. great work Elvis"
+echo "Installation was successfull. You have hacked it 😂 😂"
 
 
 
