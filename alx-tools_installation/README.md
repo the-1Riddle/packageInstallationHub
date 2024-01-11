@@ -2,12 +2,14 @@
 
 The file install-tools.sh in this directory contains a script that will install the following tools and programs.
 
-1. betty linter&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;7. makefile
-2. pycodestyle &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; 8. semi-standard
-3. C and C# compilers&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;9. Node 14
-4. MySQL 8.0 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;10. puppet-lint
-5. installing and activating env&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;11. SQLAlchemy module version
-6. mysqlclient &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;12. mysqldb
+|                  |                  	|						|
+|------------------------------ |--------------------------- |------------------|
+| Betty linter                 	| makefile					 | Flasgger			|
+| pycodestyle                  	| semi-standard              | Flask			|
+| C and C# compilers           	| Request module             | Node 14			|
+| Fabric for Python             | puppet-lint                | MySQL 8			|
+| installing and activating env	| SQLAlchemy module version  ||
+| mysqlclient                  	| MySqldb                    ||
 
 **Usage:**
 
@@ -25,5 +27,7 @@ Then you can run the file as follows:
 ```
 ./install-tools.sh
 ```
+> [!NOTE]<br>
+> Though, Request module will be installed, it has been deprecated since February 2020 - the team is considering alternative to replace this module - however, it’s a really simple and powerful module for practicing web-scraping in JavaScript (and still used a lot in the industry).
 
 **Good Luck.**

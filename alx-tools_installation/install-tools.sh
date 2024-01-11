@@ -67,7 +67,8 @@ EOF
 
 # installing and activating env
 sudo apt-get install -y python3.8-venv
-python3 -m venv venv 
+python3 -m venv venv
+# shellcheck source=/dev/null
 source venv/bin/activate
 
 # installing mysqldb
@@ -110,9 +111,51 @@ sudo npm install -y semistandard --global
 # installing make
 sudo apt-get install -y make
 
+# Install Fabric for Python 3 - version
+pip3 uninstall Fabric
+
+#                                 Install dependencies
+sudo apt-get update
+sudo apt-get install -y libffi-dev libssl-dev build-essential python3-dev libpython3-dev
+echo "first process complete"
+
+#                           Install required Python packages
+pip3 install pyparsing appdirs
+pip3 install setuptools==40.1.0 cryptography==2.8 bcrypt==3.1.7 PyNaCl==1.3.0 Fabric3==1.14.post1
+
+# installing flask
+pip3 install Flask
+
+#           FLASGGER INSTALLATION
+# Install python3-lxml
+sudo apt-get install -y python3-lxml
+
+# Install flask_cors if not installed yet
+sudo pip3 install flask_cors
+
+# Install flasgger
+sudo pip3 install flasgger
+
+# Uninstall and install jsonschema version 3.0.1
+sudo pip3 uninstall -y jsonschema
+sudo pip3 install jsonschema==3.0.1
+
+# Install pathlib2
+sudo pip3 install pathlib2
+
+echo "Installation completed successfully!"
+# the version installed
+pip freeze | grep flasgger
+
+sleep 2
+
+# installing request module
+sudo npm install -y request --global
+export NODE_PATH=/usr/lib/node_modules
+
+#                        message indicating successful execution
+echo "Request module installed globally, and NODE_PATH exported."
+
 # on successful instalation printf
 
 echo "Installation was successfull. You have hacked it 😂 😂"
-
-
-
