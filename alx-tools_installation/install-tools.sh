@@ -42,9 +42,15 @@ chmod a+x betty
 # moving "betty" file into the /usr/local/bin/ directory
 sudo mv betty /usr/local/bin/
 
+# move back to the main dir
+cd .. || exit
+
 # install pycodestyle
 sudo apt install -y python3-pip
 pip install -y pycodestyle
+
+# install shellcheck
+sudo apt-get install -y shellcheck
 
 # installing C and C# compilers
 sudo apt-get install -y gcc
@@ -75,7 +81,7 @@ source venv/bin/activate
 sudo apt-get install -y python3-dev libmysqlclient-dev zlib1g-dev
 
 #                         Install Python package
-sudo pip3 install mysqlclient
+pip3 install mysqlclient
 
 #                            Run Python script
 python3 - <<EOF
@@ -84,7 +90,7 @@ print("MySQLdb version:", MySQLdb.version_info)
 EOF
 
 # Install SQLAlchemy module version 
-sudo pip3 install SQLAlchemy
+pip3 install SQLAlchemy
 
 #                     Check the installed version using Python
 python3 - <<EOF
@@ -131,17 +137,17 @@ pip3 install Flask
 sudo apt-get install -y python3-lxml
 
 # Install flask_cors if not installed yet
-sudo pip3 install flask_cors
+pip3 install flask_cors
 
 # Install flasgger
-sudo pip3 install flasgger
+pip3 install flasgger
 
 # Uninstall and install jsonschema version 3.0.1
-sudo pip3 uninstall -y jsonschema
-sudo pip3 install jsonschema==3.0.1
+pip3 uninstall -y jsonschema
+pip3 install jsonschema==3.0.1
 
 # Install pathlib2
-sudo pip3 install pathlib2
+pip3 install pathlib2
 
 echo "Installation completed successfully!"
 # the version installed
