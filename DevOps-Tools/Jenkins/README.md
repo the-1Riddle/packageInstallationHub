@@ -25,8 +25,12 @@ The script will first request for updates, then install Java which is a prerequi
    sudo ./install-jenkins.sh
    ```
 
-Lastly, when the execution is done, the initial admin password will be displayed in the terminal. You can then go to `http://<your_server_ip>:8080` 
-to complete the initial setup using the displayed admin password.<br>
-You can configure Jenkins according to your requirements after the initial setup.
+Lastly, when the execution is done, the initial admin password will be displayed in the terminal.<br>
+Go to `http://<your_server_ip>:8080` to complete the initial setup using the displayed admin password. 
+Then you can configure Jenkins according to your requirements after the initial setup.
+
+
+> **Option**\
+> Feel free to delete the cloned directory when you are done with the installation
 
 **Good Luck**
