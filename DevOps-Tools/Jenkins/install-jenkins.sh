@@ -1,9 +1,9 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Update the system
 sudo apt-get update
 
-# Install Java (required for Jenkins)
+# Install Java
 sudo apt-get install -y openjdk-11-jdk
 
 # Add the Jenkins repository to the system
