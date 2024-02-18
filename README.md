@@ -18,7 +18,7 @@
   <h3 align="center">Package Installation Hub</h3>
 
   <p align="center">
-    Find alll your installation scripts on one place!
+    Find all your installation scripts in one place!
     <br />
     <a href="https://github.com/the-1Riddle/packageInstallationHub"><strong>Explore the docs »</strong></a>
     <br />
